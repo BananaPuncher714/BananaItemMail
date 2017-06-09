@@ -1,0 +1,38 @@
+# BananaItemMail config - Created by BananaPuncher714
+# Whether or not you can mail to yourself
+mail-to-self: false
+
+# Whether or not you can mail to offline players
+mail-to-offline-players: true
+
+# Here are some worlds that Banana Mail does not deliver to
+blacklisted-worlds:
+- world_nether
+- world_the_end
+
+# This is the range of mail. Anything greater than 0 is how far away the person must be
+# 0 means as long as they're in the same world
+# -1 means as long as they're not in a blacklisted world
+mail-mode: 0
+
+# This is whether or not to disable the command completely when in a blacklisted world
+disable-mail-completely: true
+
+# The cooldown in seconds before you can mail someone
+cooldown-time: 10
+
+# Here's a bunch of messages for you to edit to your heart's delight!
+# Remember!! When putting color codes in, the color goes before anything else!! ex. bold, italic
+# Leave them empty "" if you don't want it to be displayed
+# Only certain messages support %p, the name of the player who you're interacting with
+# Only the first message supports %t, which is the amount of seconds left before you can mail
+messages:
+    cooldown-message: "&c&lYou have to wait %t seconds before you can send mail!"
+    sent-mail: "&a&lYou sent mail to %p!"
+    got-mail: "&b&lYou recieved mail from %p!"
+    mail-was-empty-so-not-sent: "&c&lYou didn't send any mail!"
+    too-far: "&c&lYou are too far from %p to send them mail!"
+    totally-disabled: "&c&lBanana Mail Service is unavailable in this world"
+    wrong-world: "&c&lYou or %p are in a world that does not receive Banana Mail Service!"
+    different-world: "&c&lYou and %p are in different worlds!"
+    no-permission: "&c&lYou do not have permission to use the mailbox!"

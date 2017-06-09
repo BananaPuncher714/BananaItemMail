@@ -1,0 +1,84 @@
+# This is the master control for the entire format of the mailbox menu
+# If you mess up, delete this file to try again :)
+# Only mess with these if you know exactly what you are doing! or not...
+# Remember!! When putting color codes in, the color goes before anything else!! ex. bold, italic
+# These are the default settings
+
+# Here is the main menu config
+# Don't bother adding anything because it's all hard-coded into the plugin already
+main-menu:
+    rows: 5
+    title: "&1&lMailbox"
+    panels:
+        selection-panel:
+            slot: 9
+            # If x and y expandable are true, setting x and y doesn't make much of a difference
+            x: 1
+            y: 1
+            x-expandable: true
+            y-expandable: true
+            panes:
+                send-mail-pane:
+                    # %p in the display name means the player's name
+                    item-online-display-name: "&a%p"
+                    item-offline-display-name: "&c%p"
+                    item-lore: 
+                    - "&7Click to send mail"
+    buttons:
+        send-mail:
+            slot: 3
+            item-id: 328
+            display-name: "&b&lSend mail"
+            lore: []
+        check-mailbox:
+            slot: 5
+            item-id: 339
+            # %p here means the player that's viewing the mailbox
+            display-name: "&b&l%p's mailbox"
+            lore: []
+        toggle-privacy:
+            slot: 1
+            item-id-on: 130
+            item-id-off: 54
+            display-name: "&9Click to change mailbox privacy"
+            lore-on:
+            - "&7This mailbox is currently public"
+            lore-off:
+            - "&7This mailbox is currently private"
+        toggle-notifications:
+            slot: 7
+            item-id-on: 348
+            item-id-off: 331
+            display-name-on: "&9Click to disable notifications"
+            display-name-off: "&9Click to enable notifications"
+            lore-on:
+            - "&7Notifications are currently on"
+            lore-off:
+            - "&7Notifications are currently off"
+        toggle-recipients:
+            slot: 40
+            item-id-on: 381
+            item-id-off: 368
+            display-name: "&aClick to change player visibility"
+            lore-on:
+            - "&7Currently viewing all players"
+            lore-off:
+            - "&7Currently viewing only online players"
+        next-page:
+            slot: 44
+            item-id: 262
+            display-name: "&f&lNext Page"
+            lore: []
+        previous-page:
+            slot: 36
+            item-id: 262
+            display-name: "&f&lPrevious Page"
+            lore: []
+
+# Here is the inventory where you send people stuff
+# The name of the player who you're sending stuff to
+# is automatically placed between the prefix and suffix
+outgoing-mail-menu:
+    rows: 4
+    prefix: "&1"
+    suffix: "'s mailbox"

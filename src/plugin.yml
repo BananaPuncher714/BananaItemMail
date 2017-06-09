@@ -1,0 +1,25 @@
+name: BananaItemMail
+main: io.github.bananapuncher714.BananaItemMailMain
+version: 2.1
+author: BananaPuncher714
+commands:
+    mail:
+        description: Opens mail
+    enabletheawesomedevconfigforbananaitemmail:
+        description: Creates a dev config for advanced user configuration
+permissions:
+    bananaitemmail.mail:
+        description: Allows you to access the mailbox
+        default: true
+    bananaitemmail.bypass.cooldown:
+        description: Allows you to bypass the cooldown for mailing items
+        default: op
+    bananaitemmail.bypass.distance:
+        description: Allows you to mail to anywhere in the world
+        default: op
+    bananaitemmail.admin:
+        description: Allows you to mail private mailboxes and mail stuff to yourself
+        default: op
+    bananaitemmail.superadmin:
+        description: Lets you create the DEV-CONFIG!!!
+        default: false
